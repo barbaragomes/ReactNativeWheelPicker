@@ -94,6 +94,13 @@ public class WheelPickerManager extends SimpleViewManager<WheelPicker>  implemen
         }
     }
 
+    @ReactProp(name = "itemTextAlign")
+    public void setItemAlign(WheelPicker wheelPicker, int itemAlign) {
+        if (wheelPicker!=null){
+            wheelPicker.setItemAlign(itemAlign);
+        }
+    }
+
     @ReactProp(name = "visibleItemCount")
     public void setVisibleItemCount(WheelPicker wheelPicker, int visibleItemCount) {
         if (wheelPicker!=null){
@@ -114,6 +121,14 @@ public class WheelPickerManager extends SimpleViewManager<WheelPicker>  implemen
             wheelPicker.setIndicatorColor(Color.parseColor(indicatorColor));
         }
     }
+
+    @ReactProp(name = "indicatorSize")
+    public void setIndicatorSize(WheelPicker wheelPicker, int indicatorSize) {
+        if (wheelPicker!=null){
+            wheelPicker.setIndicatorSize(indicatorSize);
+        }
+    }
+
 
     @ReactProp(name = "isCurtain")
     public void setCurtain(WheelPicker wheelPicker, Boolean isCurtain) {
